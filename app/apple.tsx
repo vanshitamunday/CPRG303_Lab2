@@ -5,12 +5,12 @@ export default function ApplePage() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>This is an Apple!</Text>
-        {/*
+        {
       <Image
-        source={require("../assets/apple.png")}
+        source={require("../assets/apple.jpg")}
         style={styles.image}
       />
-      */}
+      }
     </View>
   );
 }
