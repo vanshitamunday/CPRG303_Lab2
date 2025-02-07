@@ -1,14 +1,10 @@
-import { Pressable, Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, TouchableOpacity } from "react-native";
 
-interface Props {
-  increment: () => void;
-}
-
-export default function IncrementButton({ increment }: Props) {
+export default function IncrementButton({ increment }: { increment: () => void }) {
   return (
-    <Pressable style={styles.button} onPress={increment}>
+    <TouchableOpacity style={styles.button} onPress={increment}>
       <Text style={styles.text}>Increment</Text>
-    </Pressable>
+    </TouchableOpacity>
   );
 }
 

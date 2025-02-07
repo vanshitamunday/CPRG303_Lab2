@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { Link } from "expo-router";
-import IncrementButton from "../components/IncrementButton";
-import DecrementButton from "../components/DecrementButton";
-// import DecrementButton from "../components/DecrementButton";
+import IncrementButton from "../components/incrementButton";
+import DecrementButton from "../components/decrementButton";
 
 export default function Lab3() {
   const [counter, setCounter] = useState(0); // Counter state
@@ -24,7 +22,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#000", // Match the dark background in the image
+    backgroundColor: "#000", 
   },
   title: {
     fontSize: 24,
@@ -33,7 +31,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   buttonContainer: {
-    flexDirection: "row", // Align buttons side by side
+    flexDirection: "row", 
     marginTop: 10,
   },
   link: {
