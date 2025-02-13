@@ -10,9 +10,19 @@ export default function HomeScreen() {
       <Text style={styles.subtitle}>Click on a fruit to learn more:</Text>
       <ListComponent />
 
-      <Link href="/lab_3">
-      <Text style={styles.buttonText}>Go to Lab 3 Counter</Text>
-      </Link>
+      {/* Button to navigate to Lab 3 */}
+      <Pressable style={styles.button}>
+        <Link href="/lab_3">
+          <Text style={styles.buttonText}>Go to Lab 3 Counter</Text>
+        </Link>
+      </Pressable>
+
+      {/* Button to navigate to Lab 4 */}
+      <Pressable style={styles.button}>
+        <Link href="/lab4">
+          <Text style={styles.buttonText}>Go to Lab 4 Destinations</Text>
+        </Link>
+      </Pressable>
     </View>
   );
 }
@@ -40,11 +50,12 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     paddingHorizontal: 20,
     borderRadius: 8,
-    marginTop: 20,
+    marginTop: 10, // Added margin between buttons
   },
   buttonText: {
     fontSize: 18,
     color: "white",
     fontWeight: "bold",
+    textAlign: "center",
   },
 });
