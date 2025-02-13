@@ -1,16 +1,13 @@
-import { Pressable, Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, TouchableOpacity } from "react-native";
 
-interface Props {
-    decrement: () => void;
+export default function DecrementButton({ decrement }: { decrement: () => void }) {
+  return (
+    <TouchableOpacity style={styles.button} onPress={decrement}>
+      <Text style={styles.text}>Decrement</Text>
+    </TouchableOpacity>
+  );
 }
 
-export default function DecrementButton({ decrement }:Props) {
-return(
-    <Pressable style={styles.button} onPress={decrement}>
-          <Text style={styles.text}>Decrement</Text>
-        </Pressable>
-);
-}
 const styles = StyleSheet.create({
   button: {
     backgroundColor: "blue",
