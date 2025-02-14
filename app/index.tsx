@@ -1,14 +1,14 @@
 import React from "react";
 import { View, Text, StyleSheet, Pressable } from "react-native";
 import {Link} from "expo-router";
-import ListComponent from "../components/list_components";
+// import ListComponent from "../components/list_items";
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to the App!</Text>
+      {/* <Text style={styles.title}>Welcome to the App!</Text>
       <Text style={styles.subtitle}>Click on a fruit to learn more:</Text>
-      <ListComponent />
+      <ListComponent /> */}
 
       {/* Button to navigate to Lab 3 */}
       <Pressable style={styles.button}>
