@@ -4,9 +4,13 @@ import vacationDestinations from "../constants/list_items";
 
 export default function Lab4() {
   const [selectedDestinations, setSelectedDestinations] = useState<number[]>([]);
-
+  
   const handleSelect = (id: number) => {
-    setSelectedDestinations([...selectedDestinations, id]);
+    if (selectedDestinations.includes(id)) {
+      setSelectedDestinations(selectedDestinations.filter((selectedId) => selectedId !== id));
+    } else {
+      setSelectedDestinations([...selectedDestinations, id]);
+    }
   };
   
   return (
