@@ -23,6 +23,13 @@ export default function HomeScreen() {
           <Text style={styles.buttonText}>Go to Lab 4 Destinations</Text>
         </Link>
       </Pressable>
+
+      {/* Button to navigate to Lab 5 */}
+      <Pressable style={styles.button}>
+        <Link href="/lab5">
+          <Text style={styles.buttonText}>Go to Lab 5 API Call using  UseEffect</Text>
+        </Link>
+      </Pressable>
     </View>
   );
 }
